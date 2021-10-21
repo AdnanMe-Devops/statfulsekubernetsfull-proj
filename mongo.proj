@@ -1,0 +1,85 @@
+Managed Kubernetes Cluster using Helm | 
+
+Linode Kubernetes Engine | Kubernetes on 
+
+Cloud .GO through a practical use case of 
+
+deploying an application on a managed 
+
+Kubernetes cluster using Linode 
+
+Kubernetes Engine.
+
+ deploy a replicated database, 
+
+configure its persistence and making it 
+
+available with a UI client from browser 
+
+using Ingress. Also will use Helm to 
+
+make the process more efficient.
+
+
+1. Deploy replicated MongoDB (StatefulSet 
+
+using Helm)
+2. Configure Data Persistence for MongoDB 
+
+(Linode Block Storage)
+3. Deploy MongoExpress (Deployment and 
+
+Service)
+4. Deploy NGINX Ingress Controller as 
+
+Loadbalancer (using Helm)
+5. Configure Ingress rule
+
+In detail we will deploy MongoDB on 
+
+Linode Kubernetes Cluster using Helm 
+
+(1.).  will create replicated MongoDB 
+
+using StatefulSet component and configure 
+
+data persistence for MongoDB with 
+
+Linode's cloud storage (2.).
+
+Then  will deploy a MongoExpress, a UI 
+
+client, for MongoDB database to access it 
+
+from the browser (3.). For this client we 
+
+will configure NGINX Ingress Controller 
+
+(4.). So we will deploy Ingress 
+
+Controller in the cluster and configure 
+
+Ingress rule to route the request to 
+
+MongoExpress internal Service (5.).
+
+
+
+Overview of what we build/deploy
+Create Kubernetes Cluster on LKE
+ Deploy MongoDB StatefulSet using Helm
+ Deploy MongoExpress (Deployment and 
+
+Internal Service)
+ Deploy Ingress Controller using Helm and 
+
+configure Ingress Rule
+ Understand the Request Flow through the 
+
+Kubernetes Setup
+ Delete MongoDB Pods and restart - 
+
+Volumes are re-attached
+Clean up - Helm uninstall, delete Volume 
+
+and Kubernetes Cluster
